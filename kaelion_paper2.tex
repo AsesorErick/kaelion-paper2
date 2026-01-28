@@ -354,19 +354,33 @@ For a kink solution, the characteristic width is:
 w = \frac{1}{m_\lambda}
 \end{equation}
 
-where $m_\lambda$ is the mass of the $\lambda$ field:
+where $m_\lambda$ is the mass of the $\lambda$ field. Computing $V''(\lambda)$:
 \begin{equation}
-m_\lambda^2 = \frac{1}{2}V''(0) = \frac{1}{2} \cdot 2V_0 = V_0 = \sqrt{3}
+V(\lambda) = V_0 \lambda^2(1-\lambda)^2
+\end{equation}
+
+\begin{equation}
+V''(\lambda) = 2V_0[1 - 6\lambda(1-\lambda)]
+\end{equation}
+
+At $\lambda = 0$:
+\begin{equation}
+V''(0) = 2V_0 = 2\sqrt{3}
+\end{equation}
+
+The mass squared is:
+\begin{equation}
+m_\lambda^2 = V''(0) = 2\sqrt{3} = \sqrt{12}
 \end{equation}
 
 Therefore:
 \begin{equation}
-m_\lambda = 3^{1/4} = \sqrt[4]{3}
+m_\lambda = \sqrt[4]{12} \approx 1.861
 \end{equation}
 
-and:
+and the transition width:
 \begin{equation}
-\boxed{w = \frac{1}{\sqrt[4]{3}} = \frac{1}{\sqrt{2\sqrt{3}}} \approx 0.54\,\ell_P}
+\boxed{w = \frac{1}{m_\lambda} = \frac{1}{\sqrt[4]{12}} \approx 0.54\,\ell_P}
 \label{eq:width}
 \end{equation}
 
@@ -505,7 +519,7 @@ $V_0$ & $\sqrt{3}$ & 1.7321 & $V_0 = 1/\phi_0$ \\
 $V_0 \times \phi_0$ & 1 & 1.0000 & Dimensional analysis \\
 $m_\lambda$ & $\sqrt[4]{12}$ & 1.8612 & $m^2 = V''(0)/2$ \\
 $c$ & $2\pi$ & 6.2832 & SYK scrambling \\
-$w$ & $1/\sqrt{2\sqrt{3}}$ & $0.54\,\ell_P$ & Kink width \\
+$w$ & $1/\sqrt[4]{12}$ & $0.54\,\ell_P$ & Kink width \\
 \bottomrule
 \end{tabular}
 \caption{Complete set of derived constants. \textbf{Zero free parameters.}}
@@ -554,7 +568,7 @@ We have presented a complete theoretical framework for emergent gravity from inf
 \begin{enumerate}
     \item \textbf{Unique potential:} $V(\lambda) = \sqrt{3}\,\lambda^2(1-\lambda)^2$ derived from symmetry, stability, and MERA statistics
     
-    \item \textbf{Zero free parameters:} All constants ($\phi_0 = 1/\sqrt{3}$, $V_0 = \sqrt{3}$, $c = 2\pi$, $w = 0.54\,\ell_P$) are derived
+    \item \textbf{Zero free parameters:} All constants ($\phi_0 = 1/\sqrt{3}$, $V_0 = \sqrt{3}$, $c = 2\pi$, $w \approx 0.54\,\ell_P$) are derived
     
     \item \textbf{Experimental support:} 156+ IBM Quantum measurements verify $\alpha(\lambda) = -1/2 - \lambda$ with $R^2 > 0.99$
     
